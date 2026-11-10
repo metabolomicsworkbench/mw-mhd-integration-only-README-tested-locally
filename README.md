@@ -16,8 +16,8 @@ Development environment for linux or mac
 ```bash
 
 # install python package manager uv
-# Already installed
-#curl -LsSf https://astral.sh/uv/install.sh | sh
+# Can skip if already installed in your account; running again will update it safely
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # add $HOME/.local/bin to your PATH, either restart your shell or run
 # This line can be added to the file like .bashrc or .bash_profile (assuming bash shell) in your home folder, e.g., ${HOME}
