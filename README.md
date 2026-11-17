@@ -93,7 +93,7 @@ in the command, e.g.,
 ```console
 $uv run mw-mhd-cli --help
 ```
-or, invoke the venv before other commands (after installation commands have been executed)
+or, being in the folder mw-mhd-integration, invoke the venv before other commands (after installation commands have been executed)
 ```console
 $source .venv/bin/activate
 ```
