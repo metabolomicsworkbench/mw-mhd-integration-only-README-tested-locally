@@ -86,6 +86,14 @@ Note: The file ontology_lookup.db may be several GB in size, so, it can be put a
 --ontology-lookup-db-path ontology_lookup.db
 part in the mw-mhd-cli command below.
 
+If the default python environment is different from the one used by uv, then to invoke the one from uv, prepend
+uv run
+in the command, e.g.,
+$ uv run mw-mhd-cli --help
+
+or, invoke the venv before other commands (after installation commands have been executed)
+source .venv/bin/activate
+
 ```bash
 curl -L \
   https://ftp.ebi.ac.uk/pub/databases/metabolights/ontology-lookup/ontology_lookup.db \
