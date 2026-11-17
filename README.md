@@ -82,17 +82,23 @@ For offline ontology validation, download the MetaboLights ontology lookup
 database from [ontology_lookup.db](https://ftp.ebi.ac.uk/pub/databases/metabolights/ontology-lookup/ontology_lookup.db)
 and pass its local path with `--ontology-lookup-db-path`:
 
-Note: The file ontology_lookup.db may be several GB in size, so, it can be put at a common location, or, just do online validation, in which case, there is no need to download it locally, i.e., do not run the curl command below. Also, for online validation, Do not include the
+#### Notes 
+The file ontology_lookup.db may be several GB in size, so, it can be put at a common location, or, just do online validation, in which case, there is no need to download it locally, i.e., do not run the curl command below. Also, for online validation, Do not include the
 --ontology-lookup-db-path ontology_lookup.db
 part in the mw-mhd-cli command below.
 
 If the default python environment is different from the one used by uv, then to invoke the one from uv, prepend
 uv run
 in the command, e.g.,
-$ uv run mw-mhd-cli --help
-
+```console
+$uv run mw-mhd-cli --help
+```
 or, invoke the venv before other commands (after installation commands have been executed)
-source .venv/bin/activate
+```console
+$source .venv/bin/activate
+```
+
+#### Example commands 
 
 ```bash
 curl -L \
