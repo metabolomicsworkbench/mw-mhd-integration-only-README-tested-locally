@@ -88,8 +88,7 @@ The file ontology_lookup.db may be several GB in size, so, it can be put at a co
 part in the mw-mhd-cli command below.
 
 If the default python environment is different from the one used by uv, then to invoke the one from uv, prepend
-uv run
-in the command, e.g.,
+'uv run' in the command, e.g.,
 ```console
 $uv run mw-mhd-cli --help
 ```
